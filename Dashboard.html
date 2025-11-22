@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Grupo 1</title>
+
+     <!-- Bootstrap local -->
+  <link rel="stylesheet" href="public/vendor/css/bootstrap.min.css">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="public/css/estilos.css">
+</head>
+<body class="bg-light">
+
+    <div class="container mt-4">
+        <h2 class="text-center mb-4">Dashboard Académico — Grupo 1</h2>
+
+        <!-- Formulario -->
+        <div class="card shadow mb-4">
+            <div class="card-body">
+
+                <h4 class="mb-3">Registro de Estudiantes</h4>
+
+                <div id="alertas"></div>
+
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <label class="form-label">Nombre</label>
+                        <input id="nombre" type="text" class="form-control">
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="form-label">Edad</label>
+                        <input id="edad" type="number" class="form-control">
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="form-label">Nota Final (0–20)</label>
+                        <input id="nota" type="number" class="form-control">
+                    </div>
+                </div>
+
+                <button id="btnAgregar" class="btn btn-primary">Agregar</button>
+            </div>
+        </div>
+
+        <!-- Tabla -->
+        <div class="card shadow mb-4">
+            <div class="card-body">
+                <h4 class="mb-3">Listado de Estudiantes</h4>
+
+                <table class="table table-bordered table-striped">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Nota</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaEstudiantes"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Estadísticas -->
+        <div class="card shadow mb-4">
+            <div class="card-body">
+                <h4 class="mb-3">Estadísticas del Grupo</h4>
+
+                <p><strong>Total de estudiantes:</strong> <span id="total">0</span></p>
+                <p><strong>Promedio del grupo:</strong> <span id="promedio">0</span></p>
+                <p><strong>Aprobados:</strong> <span id="aprobados">0</span></p>
+                <p><strong>Reprobados:</strong> <span id="reprobados">0</span></p>
+
+                <button id="btnReporte" class="btn btn-success mt-2">Generar Reporte</button>
+
+                <div id="reporte" class="mt-3"></div>
+            </div>
+        </div>
+
+        <footer class="text-center mt-4 mb-3 text-muted">
+            © 2025 Grupo 1 — Todos los derechos reservados.
+        </footer>
+
+    </div>
+
+    <script src="public/vendor/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Lógica de la tabla -->
+    <script src="public/js/app.js"></script>
+   
+
+</body>
+</html>
