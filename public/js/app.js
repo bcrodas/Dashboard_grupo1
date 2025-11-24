@@ -70,7 +70,7 @@ function actualizarEstadisticas() {
     document.getElementById("reprobados").textContent = reprob;
 }
 
-// Generar reporte
+// Generar reporte por Isaac Mera
 document.getElementById("btnReporte").addEventListener("click", () => {
     const promedio = parseFloat(document.getElementById("promedio").textContent);
     const reporte = document.getElementById("reporte");
