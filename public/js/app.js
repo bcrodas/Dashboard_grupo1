@@ -45,6 +45,7 @@ function actualizarTabla() {
     }
 }
 
+//Estadisticas Hecho por Ginger Banchon
 // Estadísticas
 function actualizarEstadisticas() {
     let total = estudiantes.length;
