@@ -1,4 +1,4 @@
-alert("app.js SÍ se está ejecutando");
+
 const estudiantes = [];
 
 document.getElementById("btnAgregar").addEventListener("click", () => {
